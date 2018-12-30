@@ -2,7 +2,7 @@ var navigation = {
     // Variables
     $navTrigger: document.querySelector('.nav__trigger'),
     $nav: document.querySelector('.nav'),
-    $navItems: document.querySelectorAll('.nav__item a'),
+    $navItems: document.querySelectorAll('.nav__item.nav__link'),
     $main: document.querySelector('.main'),
     transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
     isOpeningNav: false,
