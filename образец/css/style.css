@@ -7,9 +7,10 @@
 }
 
 html {
-  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  font-family: 'roboto', sans-serif;
   color: #333333;
   background-color: #eeeeee;
+  font-size: 100%;
 }
 
 body.is-froze {
@@ -28,7 +29,18 @@ a {
   text-decoration: none;
 }
 
-img {
+.img {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.img__title {
+  text-align: center;
+  margin-bottom: 2%;
+  font-weight: 500px;
+  text-transform: uppercase;
+  color: rgb(25,42,30);
+}
+.page__foto {
   max-width: 100%;
 }
 
@@ -80,7 +92,7 @@ a:hover {
 
 .hero__content,
 .content {
-  max-width: 800px;
+  max-width:980px;
   margin: 0 auto;
 }
 
@@ -101,6 +113,7 @@ a:hover {
 }
 
 .hero__heading {
+  text-align: center;
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
@@ -151,6 +164,7 @@ a:hover {
 }
 
 .article__title {
+  text-align: center;
   display: block;
   position: relative;
   font-family: "Raleway", "Open Sans", sans-serif;
@@ -180,14 +194,86 @@ a:hover {
 }
 
 .article__content {
-  margin: 1rem 0 0;
-  font-size: 1rem;
-  line-height: 1.5;
+  color: #1D2E4C;
+  margin-bottom: 40px;
+  line-height: 1.6rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 500;
+  word-spacing: 2px;
 }
 @media (min-width: 600px) {
   .article__content {
-    font-size: 2vmin;
+    font-size: 1rem;
+    text-align: center;
   }
+}
+
+/*оформление цитаты*/
+.content__description {
+  color: #1D2E4C;
+  margin-bottom: 40px;
+  line-height: 1.6rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+/*оформление цитат*/
+.blockquote-one {
+  background: #fff4e0;
+  color: #474c4f;
+  padding: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+
+}
+@media (max-width: 760px) {
+  .blockquote-one__text {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+.blockquote-one:before {
+  font-family: FontAwesome;
+  content: "\f10d";
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14px;
+  color: #474C4F;
+  font-size: 20px;
+  background: #FFF4E0;
+  padding: 0 15px;
+}
+
+.blockquote-one:after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  right: 15px;
+  height: 4px;
+  border-top: 1px dotted #474C4F;
+  border-bottom: 1px dotted #474C4F;
+}
+
+.blockquote-one__text {
+  font-size: 20px;
+  letter-spacing: .05em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.blockquote-one__site {
+  font-style: normal;
+  font-weight: 300;
 }
 
 .nav__bar {
@@ -255,7 +341,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #191b22;
+  background-color: #fff;
   z-index: 0;
 }
 
